@@ -1,1 +1,5 @@
-/* pages/activity/activityDetail/activityDetail.wxss */
+.activityDetailText {
+  margin: 20rpx;
+  font: 10rpx;
+  color: gray;
+}

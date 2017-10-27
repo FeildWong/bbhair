@@ -8,17 +8,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: [{ itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" }, { itemName: "hello" },]
+    list: [{ itemName: "hello" }, { itemName: "hello" }]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
+    var that = this;
+    
+    that.setData({
       hiddenitem: false,
-      hidden: true
+      hidden: true,
     })
+    if (app.globalData){
+
+      that.setData({
+        cellHeight: 200,
+        cellImageHeight:200 - 30,
+        cellWidth: app.globalData.screen_width - 20,
+        cellImageWidth: app.globalData.screen_width - 20
+      })
+    }
+
   },
 
   /**

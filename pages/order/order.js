@@ -2,30 +2,12 @@ var app = getApp()
 
 Page({
   data: {
-    map_width: 380
-    , map_height: 380
+    mapWidth: app.globalData.screen_width
+    , mapHeight: app.globalData.screen_height
   }
   //show current position
   , onLoad: function (options) {
     var that = this;
-    // 获取定位，并把位置标示出来
-    // that.setData({
-    //   // longitude: 113.324520
-    //   // , latitude: 23.099994
-
-    // })
-    //set the width and height
-    // 动态设置map的宽和高
-    wx.getSystemInfo({
-      success: function (res) {
-        console.log(res.windowWidth + "***"+ res.windowHeight);
-        that.setData({
-          mapWidth: res.windowWidth
-          , mapHeight: res.windowHeight
-        })
-      }
-    })
-
     wx.getLocation({
       type: 'gcj02',
       success: function(res) {
@@ -44,6 +26,10 @@ Page({
                 content: "BBShop-时尚造型"
                 , color: "#d4237a"
                 , bgColor: "#00000000"
+              }
+              ,label: {
+                content:"BBShop-时尚造型"
+                , color: "#d4237a"
               }
             }
           ]

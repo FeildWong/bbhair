@@ -6,7 +6,11 @@
         <!--todo 这里写页面的具体内容 ,上方style也需自定义-->
 
         <navigator url="activityDetail/activityDetail" hover-class="" >
-        hello
+          <view class='activityCell' style='height:{{cellHeight}}px; width:{{cellWidth}}px'>
+            <image style="width: {{cellImageWidth}}px; height: {{cellImageHeight}}px; background-color: #eeeeee;" mode="aspectFill" src='../../images/mapMarks/bbShopLocation.png'></image>
+            <view> 清凉夏日，回馈顾客 </view>
+          </view>
+          
         </navigator>
 
       </block>

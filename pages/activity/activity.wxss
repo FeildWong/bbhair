@@ -1,1 +1,7 @@
-/* pages/activity/activity.wxss */
+.activityCell {
+  margin: 20rpx; 
+  margin-left: 10px;
+  margin-right: 10px;
+  background: lightgray;
+
+}
