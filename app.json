@@ -1,0 +1,48 @@
+
+{
+  "pages": [
+    "pages/order/order",
+    "pages/activity/activity",
+    "pages/bbShop/bbShop",
+    "pages/mineInfo/mineInfo",
+    "pages/home/home",
+    "pages/activity/activityDetail/activityDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e6e6e6",
+    "navigationBarTitleText": "BBHair",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#d4237a",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/order/order",
+        "text": "预约",
+        "iconPath": "images/tabbar/order.png",
+        "selectedIconPath": "images/tabbar/order_selected.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动",
+        "iconPath": "images/tabbar/activity.png",
+        "selectedIconPath": "images/tabbar/activity_selected.png"
+      },
+      {
+        "pagePath": "pages/bbShop/bbShop",
+        "text": "理发店",
+        "iconPath": "images/tabbar/bbShop.png",
+        "selectedIconPath": "images/tabbar/bbShop_selected.png"
+      } ,
+      {
+        "pagePath": "pages/mineInfo/mineInfo",
+        "text": "我的",
+        "iconPath": "images/tabbar/mineInfo.png",
+        "selectedIconPath": "images/tabbar/mineInfo_selected.png"
+      }
+    ]
+  }
+}
