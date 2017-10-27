@@ -1,0 +1,18 @@
+  <!--至少要绑定onLoadMore方法,因为原生onReachBottom方法经常不起作用-->
+ <scroll-view  wx:if="{{!hiddenItem}}"  scroll-y="true" style="wight:{{listWidth}}px;height:{{listHeight}}px;position:relative; z-index:999;" lower-threshold="50" bindscrolltolower="onLoadMore" bindscrolltoupper="onRefesh" >
+   
+    <!--列表数据list, 字段必须使用infos-->
+      <block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="unique">
+        <!--todo 这里写页面的具体内容 ,上方style也需自定义-->
+
+        <navigator url="activityDetail/activityDetail" hover-class="" >
+        hello
+        </navigator>
+
+      </block>
+
+<!--加载更多的状态显示,这里指定条目少于8条时不显示-->
+    <view class="loadmore_view" wx:if="{{!netStateBean.loadmoreHidden && infos.length>8 }}" >
+      {{netStateBean.loadmoreMsg}}
+    </view>
+  </scroll-view>
