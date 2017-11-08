@@ -9,7 +9,7 @@
 	"compileType": "weapp",
 	"libVersion": "1.6.0",
 	"appid": "wx95b46003d1d28b60",
-	"projectname": "wx_bbhair",
+	"projectname": "bbhair",
 	"condition": {
 		"weapp": {
 			"current": -1,

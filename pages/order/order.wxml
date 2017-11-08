@@ -1,2 +1,4 @@
 <!-- order View -->
-<map id="map" longitude="{{mapLongitude}}" latitude="{{mapLatitude}}" scale="17" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width:{{mapWidth}}px; height: {{mapHeight}}px;"></map>
+<map id="map" longitude="{{mapLongitude}}" latitude="{{mapLatitude}}" scale="17" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width:{{mapWidth}}px; height: {{mapHeight}}px;">
+</map>
+

@@ -8,7 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: [{ itemName: "hello" }, { itemName: "hello" }]
+    list: [{ itemName: "清凉夏日，回馈顾客" }, { itemName: "九九重阳，关爱老人" }, { itemName: "潮流发型，恭贺新春" }]
   },
 
   /**
@@ -30,6 +30,7 @@ Page({
         cellImageWidth: app.globalData.screen_width - 20
       })
     }
+
 
   },
 

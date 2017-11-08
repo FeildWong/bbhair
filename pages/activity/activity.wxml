@@ -1,6 +1,11 @@
+    <contact-button 
+      type="default-light" 
+      size="30"
+      session-from="BBHair-时尚造型"
+    ></contact-button>
   <!--至少要绑定onLoadMore方法,因为原生onReachBottom方法经常不起作用-->
  <scroll-view  wx:if="{{!hiddenItem}}"  scroll-y="true" style="wight:{{listWidth}}px;height:{{listHeight}}px;position:relative; z-index:999;" lower-threshold="50" bindscrolltolower="onLoadMore" bindscrolltoupper="onRefesh" >
-   
+
     <!--列表数据list, 字段必须使用infos-->
       <block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="unique">
         <!--todo 这里写页面的具体内容 ,上方style也需自定义-->
@@ -8,7 +13,7 @@
         <navigator url="activityDetail/activityDetail" hover-class="" >
           <view class='activityCell' style='height:{{cellHeight}}px; width:{{cellWidth}}px'>
             <image style="width: {{cellImageWidth}}px; height: {{cellImageHeight}}px; background-color: #eeeeee;" mode="aspectFill" src='../../images/mapMarks/bbShopLocation.png'></image>
-            <view> 清凉夏日，回馈顾客 </view>
+            <view> {{item.itemName}} </view>
           </view>
           
         </navigator>
